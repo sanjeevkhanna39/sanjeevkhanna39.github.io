@@ -1,2 +1,3 @@
 # sanjeevkhanna39.github.io
-Academic webpage of Sanjeev Khanna
+Personal academic website for Sanjeev Khanna.
+This repository hosts the files for https://sanjeevkhanna.org.
