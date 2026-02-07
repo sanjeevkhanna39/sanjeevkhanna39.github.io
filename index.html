@@ -1,137 +1,277 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<html>
-<td><FONT SIZE="+1">
+<!doctype html>
+<html lang="en">
 <head>
-<meta name="google-site-verification" content="oWPREtw1EsicXUcE8Oz1si9NJcTy5xx0SDmSH82Luwk" />
-<title>Sanjeev Khanna</title>
-<style>
-p {font-family: Futura}
-h1 {font-family: Futura}
-h2 {font-family: Futura}
-h3 {font-family: Futura}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjeev Khanna</title>
+  <meta name="description" content="Sanjeev Khanna — Professor of Computer Science, NYU Courant." />
+
+  <style>
+    :root{
+      --bg: #FDF3E7;
+      --text: #111;
+      --muted: #333;
+      --accent: #C63D0F;
+      --link: #0b57d0;
+      --card: rgba(255,255,255,0.55);
+      --border: rgba(0,0,0,0.12);
+      --max: 980px;
+    }
+
+    *{ box-sizing: border-box; }
+
+    body{
+      margin: 0;
+      padding: 24px 18px 64px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    a{ color: var(--link); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .wrap{ max-width: var(--max); margin: 0 auto; }
+
+    header{
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      padding: 18px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 16px;
+    }
+
+.photo{
+  flex: 0 0 auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid rgba(0,0,0,0.25);
+  background: rgba(255,255,255,0.35);
+}
+
+.photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* this is the key */
+  display: block;
+}
+
+
+    h1{
+      margin: 0;
+      font-size: 36px;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+    }
+
+    .sub{
+      margin-top: 6px;
+      color: var(--muted);
+    }
+
+    .sub strong{ color: var(--text); }
+
+    .meta{
+      margin-top: 12px;
+      color: var(--muted);
+    }
+
+    .meta .row{ margin-top: 6px; }
+
+    nav{
+      margin: 18px 0 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a{
+      display: inline-block;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.45);
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    section{
+      margin-top: 18px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 16px;
+    }
+
+    h2, h3{
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 20px;
+    }
+
+    ul{
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li{ margin: 6px 0; }
+
+    .smallnote{
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    footer{
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: left;
+    }
+
+@media (max-width: 720px){
+  header{ flex-direction: column; align-items: flex-start; }
+  .photo{ width: 160px; height: 160px; }
+  body{ font-size: 17px; }
+}
+
+     </style>
 </head>
 
-<BODY bgcolor="#FDF3E7" text=black leftmargin=30>
-
-<H1><font color="#C63D0F"> Sanjeev Khanna </font></H1>
-
-<p>
-<img src="sanjeev.jpeg" HEIGHT=300 border=2 hspace=20 vspace=20
-align=left>
-<br>
-<br>
-<font color= "0000FF">Professor of Computer Science<br>
- <A href="https://www.nyu.edu/academics/schools-and-colleges/courant-institute-school.html">Courant Institute School of Mathematics, Computing, and Data Science</A></font>
-<p>
-<br>
-<b>Address:</b> Room 403, Warren Weaver Hall<br>
-251 Mercer Street, New York, NY 10012.<br>
-<br>
-<b>Email:</b> <img src="NYU Email.png" HEIGHT=21></img></a><br>
-<br>
-
-<p>
-After many wonderful years at <a href="https://www.cis.upenn.edu/">Penn CIS</a>, I joined NYU Courant in January 2026.
-
-<br>
-<br>
-<br>
-
-<H3>
-<A name="Research">
-<font color="#C63D0F">Research Interests</font>
-</H3>
-<p>
-My primary research interests are
-in the design and analysis of algorithms for combinatorial optimization
-and in <BR>complexity theory. 
-My research has been supported by 
-<A href="http://www.nsf.gov">National Science Foundation,</A>
-an <A href="https://sloan.org/fellowships">
-Alfred P. Sloan Fellowship</A>,<BR> and a 
-<A href="http://www.gf.org">Guggenheim Fellowship</A>.
-</p>
-
-<H3>
-<A name="Professional">
-<font color = "#C63D0F">Professional Activities</font>
-</H3>
-
-<p>
-<font color = "#0000FF">Program Committees:</font> FOCS 2026 (<font color= "0000FF">Program Chair</font>), STOC 2023, FSTTCS 2021, STOC 2020, EC 2018, HALG 2018, APPROX 2017, NETECON 2017, ITCS 2016,
-STOC 2015, SODA 2013 (<font color= "0000FF">Program Chair</font>), EC 2012, STOC 2012,
-FSTTCS 2011, ICS 2011, COCOON 2010, ICS 2010, SODA 2010, ICDT 2009, SODA 2007, 
-APPROX 2004 (<font color= "0000FF">Program Chair</font>), STOC 2003, APPROX 2002, SODA 2002, STOC 2000, APPROX 2000, SWAT 1998.<BR>
-
-<br>
-I serve on the Editorial board of <A href="https://dl.acm.org/journal/jacm">Journal of the ACM (JACM)</A> and <A href="http://www.nowpublishers.com/TCS">Foundations and Trends in Theoretical Computer Science</A>. I have previously served on the editorial boards of 
-<A href="http://www.siam.org/journals/sicomp.php/">SICOMP</A>, <A href="http://www.acm.org/talg/">ACM TALG</A>, <A href="https://link.springer.com/journal/453">Algorithmica</A>, 
-<A href="https://www.journals.elsevier.com/journal-of-computer-and-system-sciences/">JCSS</A>, 
-and as an area editor for <A href="http://www.springer.com/computer/foundations/book/978-0-387-30770-1">Encyclopaedia of Algorithms</A>.<BR>
-</p>
+<body>
+  <div class="wrap">
 
 
-<H3>
-<A name="Publications">
-<font color = "#C63D0F">Publications</font>
-</H3>
-<p>
-Some of my
-<A href="pubs.html"> papers</A>.
-</p>
+    <header>
+      <div class="photo">
+        <img src="sanjeev.jpeg" alt="Sanjeev Khanna" />
+      </div>
 
-<H3>
-<A name="Current and Past Students">
-<font color = "#C63D0F">Current and Past Students</font>
-</H3>
-<p>
-<A href="https://apadaki.github.io/">Ashwin Padaki</A>
-<BR>
-<A href="https://krishsingal.github.io/">Krish Singal</A>
-<BR>
-Junkai Song
-<BR>
-<A href="https://www.seas.upenn.edu/~nathanlw/">Nathan White</A>
-<BR>
-<A href="https://huanli.me/">Huan Li</A> (Renaissance Technologies)
-<BR>
-Prathamesh Patil
-<BR>
-<A href="https://sites.google.com/view/chenyu94">Yu Chen</A> (National University of Singapore)
-<BR>
-<A href="https://sepehr.assadi.info/"> Sepehr Assadi</A> (University of Waterloo)
-<BR>
-Yang Li (Facebook)
-<BR>
-<A href= "https://users.cs.duke.edu/~sudeepa/"> Sudeepa Roy</A> (Duke University)
-<BR>
-Tanmoy Chakraborty (Facebook)
-<BR>
-Anand Bhalgat (Google)
-<BR>
-Stanislav Angelov (Google)
-<BR>
-<A href="https://wangchiew.github.io/"> Wang-Chiew Tan</A> (Facebook)
+      <div>
+        <h1>Sanjeev Khanna</h1>
 
-</p>
+        <div class="sub">
+          <strong>Professor of Computer Science</strong><br />
+          <a href="https://www.nyu.edu/academics/schools-and-colleges/courant-institute-school.html">
+            Courant Institute School of Mathematics, Computing, and Data Science
+          </a><br />
+          <a href="https://www.nyu.edu/">New York University</a>
+        </div>
 
-<H3>
-<A name="Postdocs Supervised">
-<font color = "#C63D0F">Postdocs Supervised</font>
-</H3>
-<p>
+        <div class="meta">
+          <div class="row">
+            <strong>Address:</strong> Room 403, Warren Weaver Hall · 251 Mercer Street, New York, NY 10012
+          </div>
 
-<A href= "http://grigory.us/"> Grigory Yaroslavtsev</A> (George Mason University)
-<BR>
-<A href= "http://www.cs.dartmouth.edu/~deepc/"> Deeparnab Chakrabarty</A> (Dartmouth College)
-<BR>
-<A href= "http://ttic.uchicago.edu/~cjulia/"> Julia Chuzhoy</A> (Toyota Technological Institute, Chicago)
-<BR>
+<div class="row" style="display:flex; align-items:center; gap:8px;">
+  <strong>Email:</strong>
+  <img src="NYU Email.png" height="22" alt="email address">
+</div>
 
-</FONT></td>
 
+
+
+        <p class="smallnote">
+          After many wonderful years at <a href="https://www.cis.upenn.edu/">Penn CIS</a>, I joined NYU Courant in January 2026.
+        </p>
+
+        <nav aria-label="Page sections">
+          <a href="#research">Research</a>
+          <a href="#professional">Professional</a>
+          <a href="#publications">Publications</a>
+          <a href="#students">Students</a>
+          <a href="#postdocs">Postdocs</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="research">
+      <h3>Research Interests</h3>
+      <p>
+        My primary research interests are in the design and analysis of algorithms for combinatorial optimization
+        and in complexity theory. My research has been supported by the
+        <a href="http://www.nsf.gov">National Science Foundation</a>, an
+        <a href="https://sloan.org/fellowships">Alfred P. Sloan Fellowship</a>, and a
+        <a href="http://www.gf.org">Guggenheim Fellowship</a>.
+      </p>
+    </section>
+
+    <section id="professional">
+      <h3>Professional Activities</h3>
+      <p>
+        <strong>Program Committees:</strong>
+        FOCS 2026 (<strong>Program Chair</strong>), STOC 2023, FSTTCS 2021, STOC 2020, EC 2018, HALG 2018, APPROX 2017,
+        NETECON 2017, ITCS 2016, STOC 2015, SODA 2013 (<strong>Program Chair</strong>), EC 2012, STOC 2012,
+        FSTTCS 2011, ICS 2011, COCOON 2010, ICS 2010, SODA 2010, ICDT 2009, SODA 2007,
+        APPROX 2004 (<strong>Program Chair</strong>), STOC 2003, APPROX 2002, SODA 2002, STOC 2000, APPROX 2000, SWAT 1998.
+      </p>
+
+      <p>
+        I serve on the Editorial board of
+        <a href="https://dl.acm.org/journal/jacm">Journal of the ACM (JACM)</a> and
+        <a href="http://www.nowpublishers.com/TCS">Foundations and Trends in Theoretical Computer Science</a>.
+        I have previously served on the editorial boards of
+        <a href="http://www.siam.org/journals/sicomp.php/">SICOMP</a>,
+        <a href="http://www.acm.org/talg/">ACM TALG</a>,
+        <a href="https://link.springer.com/journal/453">Algorithmica</a>,
+        <a href="https://www.journals.elsevier.com/journal-of-computer-and-system-sciences/">JCSS</a>,
+        and as an area editor for
+        <a href="http://www.springer.com/computer/foundations/book/978-0-387-30770-1">Encyclopaedia of Algorithms</a>.
+      </p>
+    </section>
+
+   <section id="publications">
+  <h3>Publications</h3>
+  <p>
+    Some of my <a href="pubs.html">papers</a>.
+  </p>
+  <p class="smallnote">
+    Also: <a href="https://scholar.google.com/citations?hl=en&user=HriWXcEAAAAJ">Google Scholar</a>
+    · <a href="https://dblp.org/pid/k/SanjeevKhanna.html">DBLP</a>
+  </p>
+  </section>
+
+    
+
+    <section id="students">
+      <h3>Current and Past Students</h3>
+      <ul>
+        <li><a href="https://apadaki.github.io/">Ashwin Padaki</a></li>
+        <li><a href="https://krishsingal.github.io/">Krish Singal</a></li>
+        <li>Junkai Song</li>
+        <li><a href="https://www.seas.upenn.edu/~nathanlw/">Nathan White</a></li>
+        <li><a href="https://huanli.me/">Huan Li</a> (Renaissance Technologies)</li>
+        <li>Prathamesh Patil</li>
+        <li><a href="https://sites.google.com/view/chenyu94">Yu Chen</a> (National University of Singapore)</li>
+        <li><a href="https://sepehr.assadi.info/">Sepehr Assadi</a> (University of Waterloo)</li>
+        <li>Yang Li (Facebook)</li>
+        <li><a href="https://users.cs.duke.edu/~sudeepa/">Sudeepa Roy</a> (Duke University)</li>
+        <li>Tanmoy Chakraborty (Facebook)</li>
+        <li>Anand Bhalgat (Google)</li>
+        <li>Stanislav Angelov (Google)</li>
+        <li><a href="https://wangchiew.github.io/">Wang-Chiew Tan</a> (Facebook)</li>
+      </ul>
+    </section>
+
+    <section id="postdocs">
+      <h3>Postdocs Supervised</h3>
+      <ul>
+        <li><a href="http://grigory.us/">Grigory Yaroslavtsev</a> (George Mason University)</li>
+        <li><a href="http://www.cs.dartmouth.edu/~deepc/">Deeparnab Chakrabarty</a> (Dartmouth College)</li>
+        <li><a href="http://ttic.uchicago.edu/~cjulia/">Julia Chuzhoy</a> (Toyota Technological Institute, Chicago)</li>
+      </ul>
+    </section>
+
+    <footer>
+      Last updated: February 2026 · <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Back to top</a>
+    </footer>
+
+  </div>
 </body>
-</HTML>
-
+</html>
