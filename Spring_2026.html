@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Randomness and Computation — Sanjeev Khanna</title>
+  <meta name="description" content="Course webpage: Randomness and Computation (NYU). Lecture schedule and course overview." />
+
+  <style>
+    :root{
+      --bg: #FDF3E7;
+      --text: #111;
+      --muted: #333;
+      --accent: #C63D0F;
+      --link: #0b57d0;
+      --card: rgba(255,255,255,0.55);
+      --border: rgba(0,0,0,0.12);
+      --max: 980px;
+    }
+
+    *{ box-sizing: border-box; }
+
+    body{
+      margin: 0;
+      padding: 24px 18px 64px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    a{ color: var(--link); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .wrap{ max-width: var(--max); margin: 0 auto; }
+
+    header{
+      padding: 18px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 16px;
+    }
+
+    h1{
+      margin: 0 0 6px;
+      font-size: 34px;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+    }
+
+    .subtitle{
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .meta{
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .meta .row{ margin-top: 6px; }
+
+    nav{
+      margin: 18px 0 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a{
+      display: inline-block;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.45);
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    section{
+      margin-top: 18px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 16px;
+    }
+
+    h2, h3{
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 20px;
+    }
+
+    ul{
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li{ margin: 10px 0; }
+
+    .smallnote{
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .schedule li{
+      margin: 12px 0;
+    }
+
+    .schedule .lecture{
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    footer{
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px){
+      body{ font-size: 17px; }
+      h1{ font-size: 28px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <h1>Randomness and Computation</h1>
+      <p class="subtitle">
+        CSCI-GA 3033-130 / CS-GY 9223-J
+      </p>
+
+      <div class="meta">
+        <div class="row"><strong>Instructor:</strong> <a href="index.html">Sanjeev Khanna</a></div>
+
+      
+        <div class="row"><strong>Term:</strong> Spring 2026</div>
+        <div class="row"><strong>Meetings:</strong> Tuesdays: 2:45 PM to 4:45 PM in Room 202, Warren Weaver Hall. </div>
+        <div class="row"><strong>Office hours:</strong> Tuesdays: 5 PM to 6 PM in Room 403, Warren Weaver Hall. </div>
+      </div>
+
+      <nav aria-label="Page sections">
+        <a href="#overview">Overview</a>
+        <a href="#topics">Topics</a>
+        <a href="#schedule">Lecture schedule</a>
+        <a href="#logistics">Course Materials</a>
+      </nav>
+    </header>
+
+    <section id="overview">
+      <h3>Overview</h3>
+      <p>
+        Randomness is a surprisingly powerful resource in modern computation, enabling algorithms that are dramatically simpler and faster than their deterministic counterparts. This course is a journey through several areas of theoretical computer science in which randomization has proved immensely successful, highlighting the core techniques that underlie the design and analysis of randomized algorithms. We will also explore their inherent limitations through tools such as query complexity and communication complexity.      
+        </p>
+      <p class="smallnote">
+        Prerequisite background: A strong background in undergraduate algorithms. The material is largely complementary to Prof. Anupam Gupta’s Fall 2025 course on Randomized Algorithms.
+      </p>
+    </section>
+
+    <section id="topics">
+      <h3>Topics</h3>
+      <p>Topics covered include:</p>
+      <ul>
+        <li>Sublinear Algorithms</li>
+        <li>Query and Communication Complexity (limits of sublinear algorithms)</li>
+        <li>Approximation algorithms via Randomized Rounding</li>
+        <li>Algebraic fingerprinting and Polynomial Identity Testing</li>
+        <li>Interactive proofs, PCP theorem, and Hardness of Approximation</li>
+        <li>Random Walks and Markov chains</li>
+      </ul>
+    </section>
+
+    <section id="schedule">
+      <h3>Lecture schedule</h3>
+      <ul class="schedule">
+        <li>
+          <span class="lecture">Lecture 1:</span>
+          Course overview; randomization in action: matrix multiplication verification, equality testing, and global mincut.
+        </li>
+        <li>
+          <span class="lecture">Lecture 2:</span>
+          Randomized complexity classes and relationships among them.
+        </li>
+        <li>
+          <span class="lecture">Lecture 3:</span>
+          Tail inequalities and their applications.
+        </li>
+        <li>
+          <span class="lecture">Lectures 4–7:</span>
+          An introduction to sublinear algorithms, and exploration of limits of sublinear computation via
+          query complexity and communication complexity.
+        </li>
+      </ul>
+     
+    </section>
+
+    <section id="logistics">
+      <h3>Course Materials</h3>
+      <ul>
+        <li><strong>Course materials:</strong> All lecture notes and homeworks are available on NYU Brightspace.</li>
+      </ul>
+    
+    </section>
+
+    <footer>
+      <a href="index.html">← Back to home</a>
+    </footer>
+
+  </div>
+</body>
+</html>
