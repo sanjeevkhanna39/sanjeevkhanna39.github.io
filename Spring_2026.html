@@ -177,28 +177,102 @@
       </ul>
     </section>
 
-    <section id="schedule">
-      <h3>Lecture schedule</h3>
-      <ul class="schedule">
-        <li>
-          <span class="lecture">Lecture 1:</span>
-          Course overview; randomization in action: matrix multiplication verification, equality testing, and global mincut.
-        </li>
-        <li>
-          <span class="lecture">Lecture 2:</span>
-          Randomized complexity classes and relationships among them.
-        </li>
-        <li>
-          <span class="lecture">Lecture 3:</span>
-          Tail inequalities and their applications.
-        </li>
-        <li>
-          <span class="lecture">Lectures 4–7:</span>
-          An introduction to sublinear algorithms, and exploration of limits of sublinear computation via
-          query complexity and communication complexity.
-        </li>
-      </ul>
-     
+
+<section id="schedule">
+  <h3>Lecture schedule</h3>
+  <ul class="schedule">
+    <li>
+      <span class="lecture">Lecture 1:</span>
+      Course overview and randomization in action. Randomness as a computational resource;
+      verifying matrix multiplication by fingerprinting; deterministic vs. randomized equality testing; 
+      Karger's contraction algorithm for global min-cut and its consequences.
+    </li>
+    <li>
+      <span class="lecture">Lecture 2:</span>
+      Randomized complexity classes. Las Vegas and Monte Carlo algorithms; zero-error,
+      one-sided-error, and two-sided-error computation; ZPP, RP, co-RP, BPP, and PP; Markov's
+      inequality; ZPP versus RP and co-RP; containments relating randomized classes to P, NP, co-NP, and PSPACE.
+    </li>
+    <li>
+      <span class="lecture">Lecture 3:</span>
+      Tail inequalities and reliable estimation. Expectation, variance, and independence;
+      Markov, Chebyshev, and Chernoff-Hoeffding bounds and their relative strengths; variance
+      reduction by averaging; Monte Carlo estimation; majority-vote
+      amplification for BPP.
+    </li>
+    <li>
+      <span class="lecture">Lecture 4:</span>
+      Sublinear space algorithms and data streams. Streaming model and approximate
+      distinct-element counting; deterministic space lower bounds via fooling sets; distinct-element counting via 
+      pairwise independent hashing.
+    </li>
+    <li>
+      <span class="lecture">Lecture 5:</span>
+      Sublinear time algorithms for graph problems. Estimating connected components of a graph; 
+      estimating minimum spanning tree weight via component counts; estimating matching size.
+    </li>
+    <li>
+      <span class="lecture">Lecture 6:</span>
+      Graph coloring and palette sparsification. Palette Sparsification Theorem for (&Delta; + 1)-coloring; 
+      applications to streaming algorithms, sublinear-query coloring algorithms, and
+      massively parallel algorithms.
+    </li>
+    <li>
+      <span class="lecture">Lecture 7:</span>
+      Limits of sublinear computation. Deterministic, randomized, and distributional query
+      complexity; Yao's minimax principle; query lower bounds for graph connectivity;
+      public versus private randomness and Newman's theorem; one-way communication and the Index
+      problem; streaming space lower bounds for connectivity, directed reachability, and
+      bipartite matching.
+    </li>
+    <li>
+      <span class="lecture">Lecture 8:</span>
+      Approximation algorithms and linear programming. Approximation guarantees, integer
+      programming, LP relaxations, and integrality gaps; deterministic rounding for weighted
+      Vertex Cover and restricted-assignment scheduling; randomized rounding for Set Cover.
+    </li>
+    <li>
+      <span class="lecture">Lecture 9:</span>
+      Independent and correlated randomized rounding. Weighted Max SAT via uniform random
+      assignment and LP-guided rounding; limitations of independent rounding; rounding for minimum s-t cut.
+    </li>
+    <li>
+      <span class="lecture">Lecture 10:</span>
+      Algebraic fingerprinting and polynomial identity testing. Schwartz-Zippel
+      lemma; polynomial identities versus zero functions over finite fields; randomized
+      polynomial identity testing; perfect-matching detection via the Edmonds and Tutte
+      matrices.
+    </li>
+    <li>
+      <span class="lecture">Lecture 11:</span>
+      Probabilistically checkable proofs and hardness of approximation. Randomized local
+      verification of NP proofs; the
+      PCP theorem and its easy direction; the FGLSS reduction and Clique inapproximability; hardness
+       of Max-3SAT; an introduction to outer and inner verifiers and proof composition.
+    </li>
+    <li>
+      <span class="lecture">Lecture 12:</span>
+      Algebraic proof checking and the PCP proof. Polynomial representation of 
+      3-CNF formulas; linearity test; self-correction by random shifts; outer-product
+      consistency tests; a constant-query PCP verifier.
+    </li>
+    <li>
+      <span class="lecture">Lecture 13:</span>
+      Markov chains, stationary distributions, and random walks. Finite Markov chains and
+      transition matrices; stationary distributions and expected return times; irreducibility,
+      periodicity, and convergence; random walks on undirected graphs; hitting and commute times.
+    </li>
+    <li>
+      <span class="lecture">Lecture 14:</span>
+      Cover times and space-bounded computation. Cover times of general graphs;
+      randomized undirected reachability in logarithmic space and polynomial time; directed
+      reachability using random walks and probabilistic clocks; deterministic recursive reachability in O(log<sup>2</sup> n) space.
+    </li>
+  </ul>
+</section>
+
+
+         
     </section>
 
     <section id="logistics">
